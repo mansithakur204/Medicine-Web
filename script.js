@@ -2,14 +2,15 @@ const medicines = [
   {
     name: "Daraprin",
     price: "Rs. 250",
-    image: "https://dwaey.com/medrg/upload/1723992724.png",
+    image: "https://tse1.mm.bing.net/th/id/OIP.wlEcT75HgZQrjrpvqw3PEwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+    link: "https://www.1mg.com/marketer/indica-laboratories-pvt-ltd-73288",
     alternatives: [
       {
         name: "Daramin",
         manufacturer: "Indica Laboratories Pvt Ltd",
         price: "Rs. 15",
         image:
-          "https://www.netmeds.com/images/product-v1/600x600/1136339/daramin_25mg_tablet_10s_742022_0_0.jpg",
+          "https://tse3.mm.bing.net/th/id/OIP.2h6uzP8XFrKQpGamFfMhVAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
         link: "https://www.1mg.com/drugs/daramin-25mg-tablet-201707",
       },
     ],
@@ -96,22 +97,22 @@ const medicines = [
       "https://images.apollo247.in/pub/media/catalog/product/c/o/combiflam_tablet_20_s-1.png?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
     link: "https://www.apollo247.com/medicine/combiflam",
   },
-  {
-    name: "Ibuprofen",
-    company: "Abbott",
-    price: "",
-    image:
-      "https://5.imimg.com/data5/SELLER/Default/2023/9/344827499/TG/YT/FY/192270567/ibuprofen-tablet-400mg.png",
-    link: "https://www.abbott.com/ibuprofen",
-  },
+ {
+  name: "Ibuprofen",
+  company: "Abbott",
+  price: "Rs. 8",
+  image:
+    "https://5.imimg.com/data5/SELLER/Default/2023/9/344827499/TG/YT/FY/192270567/ibuprofen-tablet-400mg.png",
+  link: "https://www.abbott.com/ibuprofen",
+},
   {
     name: "Brufen",
-    company: "Abbott",
-    price: "",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUmWwHGkFj5M1SKY0GM-af-pHOyLMcLqRdQ&s",
-    link: "https://www.abbott.com/brufen",
-  },
+  company: "Abbott",
+  price: "Rs. 10",
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUmWwHGkFj5M1SKY0GM-af-pHOyLMcLqRdQ&s",
+  link: "https://www.abbott.com/brufen",
+},
   {
     name: "Disprin",
     company: "Reckitt Benckiser",
@@ -122,29 +123,29 @@ const medicines = [
   },
   {
     name: "Ecosprin",
-    company: "USV Ltd.",
-    price: "",
-    image:
-      "https://assets.truemeds.in/Images/ProductImage/TM-TACR1-012745/ecosprin-75-tablet-14_ecosprin-75-tablet-14--TM-TACR1-012745_1.png",
-    link: "https://www.usv.com/medicines/ecosprin",
+  company: "USV Ltd.",
+  price: "Rs. 3",
+  image:
+    "https://assets.truemeds.in/Images/ProductImage/TM-TACR1-012745/ecosprin-75-tablet-14_ecosprin-75-tablet-14--TM-TACR1-012745_1.png",
+  link: "https://www.usv.com/medicines/ecosprin",
   },
-  {
-    name: "Aspirin",
-    company: "Bayer",
-    price: "",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCeIfr0UEUuInFvEhsJRyF3aVQKXuaMSIalA&s",
-    link: "https://www.bayer.com/aspirin",
-  },
-  {
-    name: "Aspro",
-    company: "Nicholas Healthcare Limited",
-    price: "",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2SvOcNgxiuLa4yDomGtmGL5e22x6BHuX5qQ&s",
-    link: "https://www.nicholashealthcare.com/aspro",
-  },
-  // ORS products
+ {
+  name: "Aspirin",
+  company: "Bayer",
+  price: "Rs. 5",
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCeIfr0UEUuInFvEhsJRyF3aVQKXuaMSIalA&s",
+  link: "https://www.bayer.com/aspirin",
+},
+ {
+  name: "Aspro",
+  company: "Nicholas Healthcare Limited",
+  price: "Rs. 6",
+  image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2SvOcNgxiuLa4yDomGtmGL5e22x6BHuX5qQ&s",
+  link: "https://www.nicholashealthcare.com/aspro",
+},
+
   {
     name: "ORS",
     company: "",
@@ -153,31 +154,30 @@ const medicines = [
       "https://cdn01.pharmeasy.in/dam/products_otc/W81928/prolyte-ors-orange-drink-sachet-21-gm-2-1654249497.jpg",
     link: "https://www.pharmeasy.in/product/prolyte-ors-orange-drink-sachet-21-gm-2",
   },
-  {
-    name: "Electral",
-    company: "FDC Ltd",
-    price: "",
-    image: "https://m.media-amazon.com/images/I/81jrDrIJoNL.jpg",
-    link: "https://www.amazon.in/s?k=Electral",
-  },
-  {
-    name: "ORSL",
-    company: "Dabur",
-    price: "",
-    image:
-      "https://images.apollo247.in/pub/media/catalog/product/o/r/ors0011_1-1-_1_.jpg",
-    link: "https://www.apollo247.com/medicine/orsl",
-  },
-  {
-    name: "Peditral",
-    company: "Cipla",
-    price: "",
-    image:
-      "https://images.apollo247.in/pub/media/catalog/product/P/E/PED0040_1_1.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
-    link: "https://www.apollo247.com/medicine/peditral",
-  },
+ {
+  name: "Electral",
+  company: "FDC Ltd",
+  price: "Rs. 18",
+  image: "https://m.media-amazon.com/images/I/81jrDrIJoNL.jpg",
+  link: "https://www.amazon.in/s?k=Electral",
+},
+ {
+  name: "ORSL",
+  company: "Dabur",
+  price: "Rs. 20",
+  image:
+    "https://images.apollo247.in/pub/media/catalog/product/o/r/ors0011_1-1-_1_.jpg",
+  link: "https://www.apollo247.com/medicine/orsl",
+},
+ {
+  name: "Peditral",
+  company: "Cipla",
+  price: "Rs. 22",
+  image:
+    "https://images.apollo247.in/pub/media/catalog/product/P/E/PED0040_1_1.jpg",
+  link: "https://www.apollo247.com/medicine/peditral",
+},
 
-  // Vicks & balms
   {
     name: "Vicks Vaporub",
     company: "Procter & Gamble",
@@ -186,31 +186,30 @@ const medicines = [
       "https://cdn01.pharmeasy.in/dam/products_otc/181140/vicks-vaporub-50ml-relief-from-cold-cough-headache-and-body-pain-2-1677525570.jpg",
     link: "https://www.pharmeasy.in/medicine/vicks-vaporub",
   },
-  {
-    name: "Zandu Balm",
-    company: "Emami",
-    price: "",
-    image: "https://m.media-amazon.com/images/I/617dG3SoVKL.jpg",
-    link: "https://www.amazon.in/s?k=Zandu+Balm",
-  },
+ {
+  name: "Zandu Balm",
+  company: "Emami",
+  price: "Rs. 45",
+  image: "https://m.media-amazon.com/images/I/617dG3SoVKL.jpg",
+  link: "https://www.amazon.in/s?k=Zandu+Balm",
+},
   {
     name: "Amrutanjan",
-    company: "Amrutanjan Healthcare",
-    price: "",
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/010715/amrutanjan-strong-doub-50-ml-2-1674209955.jpg?dim=400x0&dpr=1&q=100",
-    link: "https://www.pharmeasy.in/medicine/amrutanjan",
+  company: "Amrutanjan Healthcare",
+  price: "Rs. 55",
+  image:
+    "https://cdn01.pharmeasy.in/dam/products_otc/010715/amrutanjan-strong-doub-50-ml-2-1674209955.jpg",
+  link: "https://www.pharmeasy.in/medicine/amrutanjan",
   },
   {
     name: "Tiger Balm",
-    company: "Haw Par Healthcare",
-    price: "",
-    image:
-      "https://rukminim2.flixcart.com/image/850/1000/jd1z9u80/body-pain-relief/v/n/b/30-red-ointment-30g-tiger-balm-original-imaf224hjngnfmhs.jpeg?q=90&crop=false",
-    link: "https://www.flipkart.com/search?q=Tiger+Balm",
+  company: "Haw Par Healthcare",
+  price: "Rs. 60",
+  image:
+    "https://rukminim2.flixcart.com/image/850/1000/jd1z9u80/body-pain-relief/v/n/b/30-red-ointment-30g-tiger-balm-original-imaf224hjngnfmhs.jpeg",
+  link: "https://www.flipkart.com/search?q=Tiger+Balm",
   },
 
-  // Digestion products
   {
     name: "Digene",
     company: "Abbott",
@@ -228,12 +227,12 @@ const medicines = [
     link: "https://www.gsk.com/en-in/products/eno/",
   },
   {
-    name: "Gelusil",
-    company: "Pfizer",
-    price: "",
-    image:
-      "https://images.apollo247.in/pub/media/catalog/product/G/E/GEL0002_3_1.jpg",
-    link: "https://www.apollo247.com/medicine/gelusil",
+   name: "Gelusil",
+  company: "Pfizer",
+  price: "Rs. 12",
+  image:
+    "https://images.apollo247.in/pub/media/catalog/product/G/E/GEL0002_3_1.jpg",
+  link: "https://www.apollo247.com/medicine/gelusil",
   },
   {
     name: "Strepsils",
@@ -244,30 +243,30 @@ const medicines = [
     link: "https://www.reckitt.com/products/strepsils",
   },
   {
-    name: "Vicks",
-    company: "Procter & Gamble",
-    price: "",
-    image:
-      "https://images.ctfassets.net/umpxkz97ty8t/4tjmmu8xgFdItABWjhpWTA/88afdcd6055df8b4fac3fdea0098dfa5/VCD4-Packs.png",
-    link: "https://www.vicks.com/",
+  name: "Vicks",
+  company: "Procter & Gamble",
+  price: "Rs. 55",
+  image:
+    "https://images.ctfassets.net/umpxkz97ty8t/4tjmmu8xgFdItABWjhpWTA/88afdcd6055df8b4fac3fdea0098dfa5/VCD4-Packs.png",
+  link: "https://www.vicks.com/",
   },
-  {
-    name: "Dabur Honitus",
-    company: "Dabur India Ltd",
-    price: "",
-    image:
-      "https://5.imimg.com/data5/UF/HY/GLADMIN-43545561/dabur-honitus-cough-drops.png",
-    link: "https://www.dabur.com/products/dabur-honitus",
-  },
-  {
-    name: "Cofsils",
-    company: "Cipla Healthcare",
-    price: "",
-    image:
-      "https://5.imimg.com/data5/SELLER/Default/2020/9/HW/ZE/YJ/14356045/cosils-orange.jpg",
-    link: "https://www.cipla.com/product/cofsils",
-  },
+ {
+  name: "Dabur Honitus",
+  company: "Dabur India Ltd",
+  price: "Rs. 90",
+  image:
+    "https://5.imimg.com/data5/UF/HY/GLADMIN-43545561/dabur-honitus-cough-drops.png",
+  link: "https://www.dabur.com/products/dabur-honitus",
+},
 
+  {
+  name: "Cofsils",
+  company: "Cipla Healthcare",
+  price: "Rs. 6",
+  image:
+    "https://5.imimg.com/data5/SELLER/Default/2020/9/HW/ZE/YJ/14356045/cosils-orange.jpg",
+  link: "https://www.cipla.com/product/cofsils",
+},
   {
     name: "Benadryl",
     company: "Johnson & Johnson",
@@ -277,20 +276,20 @@ const medicines = [
     link: "https://www.apollo247.com/medicine/benadryl",
   },
   {
-    name: "Corex",
-    company: "Pfizer",
-    price: "",
-    image:
-      "https://shreedashrath.com/wp-content/uploads/2021/06/corex-600x600.jpg",
-    link: "https://www.pfizer.com/products/corex",
-  },
+  name: "Corex",
+  company: "Pfizer",
+  price: "Rs. 90",
+  image:
+    "https://shreedashrath.com/wp-content/uploads/2021/06/corex-600x600.jpg",
+  link: "https://www.pfizer.com/products/corex",
+},
   {
     name: "Ascoril-D",
-    company: "Glenmark",
-    price: "",
-    image:
-      "https://images.apollo247.in/pub/media/catalog/product/a/s/asc0019.jpg",
-    link: "https://www.apollo247.com/medicine/ascoril-d",
+  company: "Glenmark",
+  price: "Rs. 95",
+  image:
+    "https://images.apollo247.in/pub/media/catalog/product/a/s/asc0019.jpg",
+  link: "https://www.apollo247.com/medicine/ascoril-d",
   },
   {
     name: "Augmentin 1000 Duo Tablet",
@@ -325,7 +324,6 @@ const medicines = [
     link: "https://www.sunpharma.com/products/rosuvas",
   },
 
-  // Diabetes medicines
   {
     name: "Lantus",
     company: "Sanofi India Ltd",
@@ -376,39 +374,42 @@ const medicines = [
   },
 ];
 
-// ===== SEARCH =====
 function filterProducts(event) {
   const query = event.target.value.toLowerCase();
   const box = document.getElementById("resultBox");
+  const textSection = document.querySelector(".text-section");
 
   if (!query) {
     box.innerHTML = "";
+    box.style.display = "none";         
+    textSection.style.display = "block"; 
     return;
   }
+
+  box.style.display = "block";           
+  textSection.style.display = "none";    
 
   const results = [];
 
   medicines.forEach((med) => {
-    // MAIN MEDICINE
     if (med.name.toLowerCase().includes(query)) {
       results.push({
-  name: med.name,
-  company: med.company || med.manufacturer || "—",
-  price: med.price || "",
-  image: med.image,
-  link: med.link || "#",
-  type: "main",
-});
-
+        name: med.name,
+        company: med.company || med.manufacturer || "—",
+        price: med.price || "—",
+        image: med.image,
+        link: med.link || "#",
+        type: "main",
+      });
     }
 
-    // ALTERNATIVES
     if (med.alternatives) {
       med.alternatives.forEach((alt) => {
         if (alt.name.toLowerCase().includes(query)) {
           results.push({
             name: alt.name,
             company: alt.manufacturer || "—",
+            price: alt.price || "—",
             image: alt.image,
             link: alt.link || "#",
             parent: med.name,
@@ -422,7 +423,8 @@ function filterProducts(event) {
   renderResults(results);
 }
 
-// ===== RENDER =====
+
+
 function renderResults(items) {
   const box = document.getElementById("resultBox");
   box.innerHTML = "";
@@ -432,40 +434,51 @@ function renderResults(items) {
     return;
   }
 
-  items.forEach((item) => {
-    box.innerHTML += `
-      <div class="result-item">
-        <!-- IMAGE CLICK → OBJECT LINK -->
-      <img 
-  src="${item.image}" 
-  alt="${item.name}"
-  onclick="openLink('${item.link}')"
-/>
 
-        <div>
-  <strong>${item.name}</strong>
-  <div>${item.company}</div>
+  box.innerHTML += `<div class="section-title yellow">Original Medicine</div>`;
 
-  ${
-    item.price
-      ? `<div class="price">Price: ${item.price}</div>`
-      : ""
+  items
+    .filter((item) => item.type === "main")
+    .forEach((item) => renderItem(item));
+
+
+  const alternatives = items.filter((item) => item.type === "alt");
+
+  if (alternatives.length > 0) {
+    box.innerHTML += `<div class="section-title blue">Best Alternatives</div>`;
+    alternatives.forEach((item) => renderItem(item));
   }
-
-  ${
-    item.type === "alt"
-      ? `<div class="alt-label">Alternative of ${item.parent}</div>`
-      : ""
-  }
-</div>
-
-      </div>
-    `;
-  });
 }
+function renderItem(item) {
+  const box = document.getElementById("resultBox");
 
-// ===== OPEN LINK FUNCTION =====
+  box.innerHTML += `
+    <div class="result-item">
+      <img 
+        src="${item.image}" 
+        alt="${item.name}"
+        onclick="openLink('${item.link}')"
+      />
+
+      <div>
+        <strong>${item.name}</strong>
+        <div>${item.company}</div>
+        <div class="price">Per Unit Price: ${item.price}</div>
+
+        ${
+          item.type === "alt"
+            ? `<div class="alt-label">Alternative of ${item.parent}</div>`
+            : ""
+        }
+      </div>
+    </div>
+  `;
+}
 function openLink(url) {
   if (!url || url === "#") return;
   window.open(url, "_blank");
 }
+
+
+
+

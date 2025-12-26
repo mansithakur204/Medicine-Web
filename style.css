@@ -1,136 +1,327 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  text-decoration: none;
   box-sizing: border-box;
   font-family: Tahoma, Verdana, sans-serif;
 }
+
 body {
-  background: #047469;
+  background-color: #0b766d;
+  color: white;
+  min-height: 100vh;
 }
-#header {
-  background-color: #41ae6d;
+
+.header {
+  background-color: #4bb072;
+  display: flex;
   justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.home-page {
+  padding: 30px 20px;
+}
+
+
+.search-section label {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.search-row {
   display: flex;
   align-items: center;
-  padding: 15px 30px;
-  height: 60px;
+  gap: 12px;
 }
 
-#header a {
+.search-row input {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
   color: white;
+  outline: none;
 }
-button {
-  padding: 7px 15px;
-  background-color: #ffd700;
-  border-radius: 15px;
+
+.search-row button {
+  background-color: #ffd84d;
   border: none;
-  cursor: pointer;
-  margin-left: 70%;
-}
-label {
-  display: block;
-  margin-top: 40px;
-  margin-left: 35px;
-  color: white;
-}
-
-input {
+  padding: 10px 16px;
   border-radius: 20px;
-  margin: 15px 25px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-input[type="text"] {
-  width: 90%;
-  padding: 10px 15px;
-  color: white;            
-  background-color: transparent;
-  border:  1px solid white;           
-  outline: none;             
-  font-size: 16px;
-  text-align: left;      
+
+.text-section {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
 }
 
-.ritesh {
-  color: white;
-  padding: 220px 30px;
-  margin-top: 70px;
-  
+.text-section h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
 }
-img {
-  width: 70px;
+
+.text-section p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+.text-section {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  right: 20px;
+}
+
+.welcome-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+.welcome-text h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.welcome-text p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.welcome-content img {
+  width: 130px;
   height: auto;
 }
 
-.product {
+@media (max-width: 600px) {
+  .welcome-content {
+    flex-direction: row;   
+  }
+
+  .welcome-content img {
+    width: 100px;
+  }
+
+  .welcome-text h1 {
+    font-size: 26px;
+  }
+}
+
+
+
+
+/* js css  */
+
+
+.search-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.search-row {
   display: flex;
-  align-items: center;
-  gap: 160px;
-  max-width: 1000px;
-  margin-top: 10px;
-}
-
-.first{
-  background-color: yellow;
-}
-
-
-
-
-
-
-.result-box {
-  border: 1px solid #ddd;
-  max-width: 450px;
-  background: #fff;
-  margin-top: 6px;
-  border-radius: 10px;
-}
-
-/* Each result row */
-.result-item {
-  display: flex;
-  gap: 14px;
-  padding: 12px;
-  background: #f7f9fb;
-  border-bottom: 1px solid #eee;
+  gap: 12px;
   align-items: center;
 }
 
-/* IMAGE STYLE (important part) */
-.result-item img {
-  width: 130px;
-  height: 130px;
-  object-fit: contain;
-  border-radius: 8px;
-  background: #f1f3f5;
-  padding: 6px;
+.search-row input {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.search-row button {
+  background: #ffd84d;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-/* Text container (right side) */
-.result-item div {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+#resultBox {
+  background: #fff;
+  color: #000;
+  border-radius: 18px;
+  padding: 18px;
+  margin-top: 18px;
 }
 
-/* Medicine name */
-.result-item strong {
-  font-size: 14px;
-  color: #222;
+#resultBox.hidden {
+  display: none;
 }
 
-/* Alternative label */
-.alt-label {
-  font-size: 12px;
-  color: #6c757d;
-}
 
-/* Price */
-.result-item .price {
+
+.section-title {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
   font-size: 13px;
   font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.yellow {
+  background: #ffd84d;
   color: #000;
+}
+
+.blue {
+  background: #2d7df6;
+  color: #fff;
+}
+
+
+.result-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #0b766d;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.result-item strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.result-item .price {
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.alt-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  .search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-row button {
+    width: fit-content;
+  }
+
+  .result-item {
+    align-items: flex-start;
+  }
+
+  .result-item img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+/* contact us */
+
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b766d;   
+  padding: 20px;
+}
+
+
+.contact-page .contact-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 26px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.contact-page h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: #0b766d;
+}
+
+
+.contact-page p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+
+.contact-page button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 22px;
+  border: none;
+  background: #0b766d;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-page button:hover {
+  background: #075e56;
 }
