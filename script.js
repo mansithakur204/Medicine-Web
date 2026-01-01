@@ -374,6 +374,12 @@ const medicines = [
   },
 ];
 
+const aboutSection = document.getElementById("about");
+const contactSection = document.getElementById("contact");
+const searchInput = document.getElementById("search");
+
+
+
 function filterProducts(event) {
   const query = event.target.value.toLowerCase();
   const box = document.getElementById("resultBox");
@@ -381,13 +387,19 @@ function filterProducts(event) {
 
   if (!query) {
     box.innerHTML = "";
-    box.style.display = "none";         
-    textSection.style.display = "block"; 
+    box.style.display = "none";
+    textSection.style.display = "block";
+
+    aboutSection.style.display = "block";
+    contactSection.style.display = "block";
     return;
   }
 
-  box.style.display = "block";           
-  textSection.style.display = "none";    
+  box.style.display = "block";
+  textSection.style.display = "none";
+
+  aboutSection.style.display = "none";
+  contactSection.style.display = "none";
 
   const results = [];
 
@@ -422,6 +434,7 @@ function filterProducts(event) {
 
   renderResults(results);
 }
+
 
 
 
@@ -478,6 +491,73 @@ function openLink(url) {
   if (!url || url === "#") return;
   window.open(url, "_blank");
 }
+
+function setGreeting() {
+  const greetingEl = document.getElementById("greetingText");
+
+  const hours = new Date().getHours();
+  let greeting = "";
+
+  if (hours >= 5 && hours < 12) {
+    greeting = "Good Morning";
+  } else if (hours >= 12 && hours < 17) {
+    greeting = "Good Afternoon";
+  } else if (hours >= 17 && hours < 21) {
+    greeting = "Good Evening";
+  } else {
+    greeting = "Good Night";
+  }
+
+  const userName = "Ritesh"; 
+
+  greetingEl.innerHTML = `
+    ${greeting} <br />
+    ${userName}
+  `;
+}
+
+setGreeting();
+
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    // search clear karo
+    searchInput.value = "";
+
+    // result box hide
+    document.getElementById("resultBox").style.display = "none";
+
+    // greeting wapas lao
+    document.querySelector(".text-section").style.display = "block";
+
+    // about & contact wapas show
+    aboutSection.style.display = "block";
+    contactSection.style.display = "block";
+  });
+});
+
+
+function findMedicine() {
+  const input = document.getElementById("search").value.toLowerCase();
+
+  if (!input) {
+    alert("Please enter medicine name");
+    return;
+  }
+
+  const foundMedicine = medicines.find(
+    (med) => med.name.toLowerCase() === input
+  );
+
+  if (foundMedicine && foundMedicine.link) {
+    window.open(foundMedicine.link, "_blank");
+  } else {
+    alert("Medicine link not found");
+  }
+}
+
+
+
 
 
 

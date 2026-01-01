@@ -8,55 +8,88 @@
 </head>
 <body>
 
- <header class="header">
-  <a href="index.html" class="nav-link">Home</a>
-  <a href="contact.html" class="nav-link">Contact Us</a>
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="header">
+  <!-- LEFT: Logo (Home) -->
+  <a href="#home" class="logo-link">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/2960/2960016.png"
+      alt="Medicine Logo"
+      class="logo-img"
+    />
+  </a>
+
+  <!-- RIGHT: Navigation -->
+  <nav class="nav-menu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About Me</a>
+    <a href="#contact" class="nav-link">Contact Us</a>
+  </nav>
 </header>
 
+<!-- ================= MAIN CONTENT ================= -->
+<main>
 
-
-
-<main class="home-page">
+  <!-- ================= HOME SECTION ================= -->
+  <section id="home" class="home-page">
 
     <section class="search-section">
-  <label>Medicine Name</label>
+      <label>Medicine Name</label>
 
-  <div class="search-row">
-    <input
-  type="text"
-  id="search"
-  oninput="filterProducts(event)"
-/>
-
-    <button onclick="findMedicine()">Find Alternatives</button>
-  </div>
-
- 
-  <div id="resultBox" class="hidden"></div>
-
-<section class="text-section">
-  <div class="welcome-content">
-    <div class="welcome-text">
-      <h1>
-        Good Morning <br />
-        Ritesh
-      </h1>
-
-      <p>
-        Lorem ipsum dolor sit amet,<br />
-        consectetuer adipiscing elit
-      </p>
-    </div>
-
-    <img src="first.png" alt="Doctor illustration" />
-  </div>
-</section>
+      <div class="search-row">
+        <input
+          type="text"
+          id="search"
+          oninput="filterProducts(event)"
+        />
+        <button onclick="findMedicine()">Find Alternatives</button>
 
 
-  </main>
 
+      </div>
 
-  <script src="script.js"></script>
+      <div id="resultBox" class="hidden"></div>
+    </section>
+
+    <section class="text-section">
+      <div class="welcome-content">
+        <div class="welcome-text">
+          <h1 id="greetingText"></h1>
+
+          <p>
+            Search for medicines and explore safer, affordable<br />
+            alternatives recommended by trusted sources.
+          </p>
+        </div>
+
+        <img src="first.png" alt="Doctor illustration" />
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates, quam harum reprehenderit error ratione. <br> Molestiae itaque iure magni magnam ad, repudiandae, sit consequuntur commodi obcaecati nesciunt eveniet, libero accusamus.. <br>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem, quod id fuga tempore accusamus voluptates fugiat veritatis iste.
+    </p>
+
+  </section>
+
+  <!-- ================= CONTACT US SECTION ================= -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+
+    <p>Email: support@medicine.com</p>
+    <p>Phone: +91 999999999</p>
+  </section>
+
+</main>
+
+<!-- ================= SCRIPT ================= -->
+<script src="script.js"></script>
 
 </body>
 </html>
